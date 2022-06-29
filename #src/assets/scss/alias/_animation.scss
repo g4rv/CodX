@@ -1,0 +1,28 @@
+@keyframes switch-in {
+    0% {
+        transform: scale(.9) translateX(10%);
+    }
+    50% {
+        transform: scale(1) translateX(10%);
+    }
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}
+
+@keyframes switch-out {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+    50% {
+        transform: scale(.9) translateX(-5%);
+    }
+    100% {
+        transform: scale(.9) translateX(10%);
+    }
+}
+
+@mixin switch-anim {
+    animation-duration: .6s;
+    animation-timing-function: ease-in-out;
+}

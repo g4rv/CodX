@@ -1,0 +1,70 @@
+@use '../alias/medias' as *;
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &__list {
+        counter-reset: service;
+        max-width: 430px;
+    }
+
+    &__service {
+        padding-bottom: 1rem;
+        &::before {
+            counter-increment: service;
+            content: counter(service);
+            display: inline-block;
+            padding: .5rem 1rem;
+            margin-bottom: .25rem;
+            color: var(--clr-ntrl-1);
+            border-radius: 30px;
+        }
+        &:nth-child(-n + 9) {
+            &::before {
+                content: '0' counter(service);
+            }
+        }
+        &:nth-child(3n + 1) {
+            &::before {
+                background-color: var(--clr-green-10);
+            }
+        }
+        &:nth-child(3n + 2) {
+            &::before {
+                background-color: var(--clr-red-10);
+            }
+        }
+        &:nth-child(3n + 3) {
+            &::before {
+                background-color: var(--clr-gold-10);
+            }
+        }
+    }
+
+    &__heading {
+        margin-bottom: .5rem;
+    }
+
+    &__desc {
+    }
+
+    &__img {
+        border-radius: 30px;
+        max-width: 550px;
+        max-height: 550px;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@include bp-up(medium) {
+    .services {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+        &__list {
+            margin-left: 4rem;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@use '../alias/medias' as *;
+
+.spoller {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        padding: 1rem;
+    }
+
+    &__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+
+        &._active {
+            & .spoller__arrow {
+                transform: rotate(180deg);
+                transition: .2s;
+            }
+        }
+    }
+
+    &__arrow {
+        transition: .2s;
+        stroke: var(--clr-green-10);
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
+
+@include bp-up(medium) {
+    .spoller {
+        &__item {
+            padding: 1.5rem;
+            gap: 1.5rem;
+        }
+        &__btn {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__text {            
+            text-align: start;
+        }
+    }
+}

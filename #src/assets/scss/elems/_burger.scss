@@ -1,0 +1,59 @@
+@use '../alias/medias' as *;
+
+.burger {
+    position: relative;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    color: hsla(var(--clra-ntrl-20));
+    border: 2px solid currentColor;
+
+    &.active {
+        div {
+            &:first-child,
+            &:nth-child(2),
+            &:last-child  {
+                top: 0;
+                bottom: 0;
+            }
+
+            &:first-child {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        height: 2px;
+        background-color: currentColor;
+
+        &:first-child {
+            top: 5px;
+            bottom: auto;
+        }
+
+        &:last-child {
+            top: auto;
+            bottom: 5px;
+        }
+    }
+}
+
+@include bp-up(medium) {
+    .burger {
+        display: none;
+    }
+}

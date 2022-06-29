@@ -1,0 +1,40 @@
+@mixin bold {
+    &--bold {
+        font-weight: var(--fw-bold);
+    }
+}
+
+.h1-like {
+    font-size: var(--fz-64);
+    @include bold;
+}
+
+.h2-like {
+    font-size: var(--fz-48);
+    @include bold;
+}
+
+.h3-like {
+    font-size: var(--fz-36);
+    @include bold;
+}
+
+
+.text {
+    font-size: var(--fz-18);
+    line-height: var(--lh-xb);
+
+    &--wide {
+        letter-spacing: .025em;
+    }
+
+    &--big {
+        font-size: var(--fz-20);
+        line-height: var(--lh-s);
+    }
+
+    &--sml {
+        font-size: var(--fz-16);
+        line-height: var(--lh-s);
+    }
+}

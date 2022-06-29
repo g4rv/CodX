@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./layout/head.html', {
+    "title": "CodX"
+})
+<body>
+@@include('./layout/header.html')
+<main class="main">
+<section class="hero container">
+    <div class="hero__content">
+        <h1 class="hero__title h1-like">Change your Digital Experience</h1>
+        <p class="hero__suptitle suptitle">EXTRAORDINARY NFTs</p>
+        <p class="hero__text text">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+    </div>
+    <ul class="hero__cards team-cards" cards-switcher>
+        <li class="team-cards__card" cards-card>
+            <div class="team-cards__teammate">
+                <img src="@img/jpg/avatars/Lee_smal.jpg" alt="Lee Stone avatar" class="team-cards__avatar" width="150" height="150">
+                <div class="team-cards__info">
+                    <span class="team-cards__name">Lee Stone</span>
+                    <span class="team-cards__post">Founder</span>
+                </div>
+            </div>
+            <div class="team-cards__bg">
+                <img src="@img/jpg/NFT/nft_12.jpg" alt="Lee`s nft" width="410" height="410">
+            </div>
+        </li>
+        <li class="team-cards__card team-cards__card--active" cards-card>
+            <div class="team-cards__teammate">
+                <img src="@img/jpg/avatars/Mia_smal.jpg" alt="Mia Potter avatar" class="team-cards__avatar" width="150" height="150">
+                <div class="team-cards__info">
+                    <span class="team-cards__name">Mia Potter</span>
+                    <span class="team-cards__post">Digital creator</span>
+                </div>
+            </div>
+            <div class="team-cards__bg">
+                <img src="@img/jpg/NFT/nft_13.jpg" alt="Mia`s nft" width="410" height="410">
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="carousel container container--no-pad">
+    <h2 class="hide">NFT collection</h2>
+    <div class="carousel__wrap" carousel>
+        <ul class="carousel__list">
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_2.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_3.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_4.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_10.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_11.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_5.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_12.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_6.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+            <li class="carousel__item">
+                <img src="@img/jpg/NFT/nft_7.jpg" alt="" class="carousel__img" width="200" height="200">
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="about-us container">
+    <div class="about-us__header">
+        <h2 class="about-us__title h1-like">Hey there, we are</h2>
+        <p class="about-us__subtitle subtitle">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+    </div>
+    <div class="about-us__members">
+        <div class="about-us__member-btns">
+            <button class="about-us__member-btn about-us__member-btn--active btn btn--unfilled">Jack</button>
+            <button class="about-us__member-btn btn btn--unfilled">Suni</button>
+            <button class="about-us__member-btn btn btn--unfilled">Colin</button>
+        </div>
+        <ul class="about-us__member-list">
+            <li class="about-us__member about-us__member--active" data-member-name="Jack">
+                <img src="@img/png/mate1.png" alt="Jack img" class="about-us__member-img" width="387" height="478">
+                <div class="about-us__member-info">
+                    <p class="about-us__member-post suptitle suptitle--red">Digital Artist</p>
+                    <h3 class="about-us__member-character h3-like">Pellentesque blandit in quam rhoncus</h3>
+                    <p class="about-us__member-text text">
+                        Suspendisse ante mauris, volutpat congue sem ac, 
+                        ultrices tempor lorem. Nullam eget vehicula tellus, 
+                        ac consectetur urna. Mauris tincidunt, libero id 
+                        ultrices tincidunt, mi leo pharetra dolor, sed 
+                        luctus dui ipsum et augue. Integer non quam feugiat, 
+                        porttitor libero a, tempor neque. Nulla ac orci mauris.
+                    </p>
+                </div>
+            </li>
+            <li class="about-us__member" data-member-name="Suni">
+                <img src="@img/png/mate2.png" alt="Suni img" class="about-us__member-img" width="387" height="478">
+                <div class="about-us__member-info">
+                    <p class="about-us__member-post suptitle suptitle--red">Web Dev.</p>
+                    <h3 class="about-us__member-character h3-like">Pellentesque blandit in quam rhoncus</h3>
+                    <p class="about-us__member-text text">
+                        Suspendisse ante mauris, volutpat congue sem ac, 
+                        ultrices tempor lorem. Nullam eget vehicula tellus, 
+                        ac consectetur urna. Mauris tincidunt, libero id 
+                        ultrices tincidunt, mi leo pharetra dolor, sed 
+                        luctus dui ipsum et augue. Integer non quam feugiat, 
+                        porttitor libero a, tempor neque. Nulla ac orci mauris.
+                    </p>
+                </div>
+            </li>
+            <li class="about-us__member" data-member-name="Colin">
+                <img src="@img/png/mate3.png" alt="Colin img" class="about-us__member-img" width="387" height="478">
+                <div class="about-us__member-info">
+                    <p class="about-us__member-post suptitle suptitle--red">Designer</p>
+                    <h3 class="about-us__member-character h3-like">Pellentesque blandit in quam rhoncus</h3>
+                    <p class="about-us__member-text text">
+                        Suspendisse ante mauris, volutpat congue sem ac, 
+                        ultrices tempor lorem. Nullam eget vehicula tellus, 
+                        ac consectetur urna. Mauris tincidunt, libero id 
+                        ultrices tincidunt, mi leo pharetra dolor, sed 
+                        luctus dui ipsum et augue. Integer non quam feugiat, 
+                        porttitor libero a, tempor neque. Nulla ac orci mauris.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="our-work container">
+    <img src="@img/jpg/our-work.jpg" alt="Our work" class="our-work__img" width="550" height="550">
+    <div class="our-work__content">
+        <h2 class="our-work__title h3-like">our work</h2>
+        <p class="our-work__entry h2-like">&#8220;Um… what’s going on here?&#8221;</p>
+        <p class="our-work__text text">Nulla facilisi. Praesent molestie diam eu enim aliquet pellentesque. Vestibulum consectetur vestibulum tristique. Sed purus neque, maximus fermentum bibendum et, porta in sapien.</p>
+        <a href="#" class="our-work__btn btn btn--square btn--bold">About Codx</a>
+    </div>
+</section>
+<section class="services container">
+    <h2 class="hide">Our services</h2>
+    <ol class="services__list">
+        <li class="services__service">
+            <h3 class="services__heading h3-like h3-like--bold">Motion Graphic</h3>
+            <p class="services__desc text">
+                Suspendisse sem neque, auctor a elementum ut, 
+                varius vel leo. Donec diam arcu, porta et magna at
+            </p>
+        </li>
+        <li class="services__service">
+            <h3 class="services__heading h3-like h3-like--bold">Digital Illustration</h3>
+            <p class="services__desc text">
+                Suspendisse sem neque, auctor a elementum ut, 
+                varius vel leo. Donec diam arcu, porta et magna at
+            </p>
+        </li>
+        <li class="services__service">
+            <h3 class="services__heading h3-like h3-like--bold">Photography</h3>
+            <p class="services__desc text">
+                Suspendisse sem neque, auctor a elementum ut, 
+                varius vel leo. Donec diam arcu, porta et magna at
+            </p>
+        </li>
+    </ol>
+    <img src="@img/jpg/NFT/nft_1.jpg" alt="Suit man nft" class="services__img" width="550" height="550">
+</section>
+<section class="join">
+    <div class="join__wrap container">
+        <h2 class="join__title h1-like">Join Us and Discover our most precious NFT</h2>
+        <br class="join__text text">
+            Suspendisse sem neque, auctor a elementum ut, varius vel leo. </br>
+            Donec diam arcu, porta et magna at
+        </p>
+        <a href="#" class="join__cta btn btn--square">View on OpenSea</a>
+    </div>
+</section>
+<section class="collections container">
+    <h2 class="collections__title h1-like">Browse by Collections</h2>
+    <ul class="collections__list">
+        <li class="collection collections__item">
+            <a href="#" class="collection__link">
+                <img src="@img/jpg/categories/categories_collectibles.jpg" alt="Collectibles preview" class="collection__img" width="360" height="360">
+                <span class="collection__heading">Collectibles</span>
+            </a>
+        </li>
+        <li class="collection collections__item">
+            <a href="#" class="collection__link">
+                <img src="@img/jpg/categories/categories_art.jpg" alt="Art preview" class="collection__img" width="360" height="360">
+                <span class="collection__heading">Art</span>
+            </a>
+        </li>
+        <li class="collection collections__item">
+            <a href="#" class="collection__link">
+                <img src="@img/jpg/categories/categories_photography.jpg" alt="Photography preview" class="collection__img" width="360" height="360">
+                <span class="collection__heading">Photography</span>
+            </a>
+        </li>
+    </ul>
+    <a href="#" class="collections__cta btn btn--square">View all</a>
+</section>
+<section class="top-list container">
+    <h2 class="top-list__title h1-like">Top NFT</h2>
+    <ul class="top-list__list">
+        <li class="top-list__item nft-card">
+            <img src="@img/jpg/NFT/large/nft_14_l.jpg" alt="White Bear" class="nft-card__img" width="500" height="500">
+            <div class="nft-card__desc">
+                <span class="nft-card__heading">White Bear <strong class="nft-card__hash">#54385</strong></span>
+                <div class="nft-card__actions">
+                    <a href="#" class="nft-card__watch">
+                        <svg width="15" height="10">
+                            <use xlink:href="#eye"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="nft-card__lock">
+                        <svg width="12" height="16">
+                            <use xlink:href="#lock"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="top-list__item nft-card">
+            <img src="@img/jpg/NFT/large/nft_3_l.jpg" alt="White Bear" class="nft-card__img" width="500" height="500">
+            <div class="nft-card__desc">
+                <span class="nft-card__heading">Happy Luca <strong class="nft-card__hash">#54395</strong></span>
+                <div class="nft-card__actions">
+                    <a href="#" class="nft-card__watch">
+                        <svg width="15" height="10">
+                            <use xlink:href="#eye"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="nft-card__lock">
+                        <svg width="12" height="16">
+                            <use xlink:href="#lock"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="top-list__item nft-card">
+            <img src="@img/jpg/NFT/large/nft_5_l.jpg" alt="Dodo" class="nft-card__img" width="500" height="500">
+            <div class="nft-card__desc">
+                <span class="nft-card__heading">Dodo <strong class="nft-card__hash">#54376</strong></span>
+                <div class="nft-card__actions">
+                    <a href="#" class="nft-card__watch">
+                        <svg width="15" height="10">
+                            <use xlink:href="#eye"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="nft-card__lock">
+                        <svg width="12" height="16">
+                            <use xlink:href="#lock"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="top-list__item nft-card">
+            <img src="@img/jpg/NFT/large/nft_4_l.jpg" alt="Nano Nano" class="nft-card__img" width="500" height="500">
+            <div class="nft-card__desc">
+                <span class="nft-card__heading">Nano Nano <strong class="nft-card__hash">#54348</strong></span>
+                <div class="nft-card__actions">
+                    <a href="#" class="nft-card__watch">
+                        <svg width="15" height="10">
+                            <use xlink:href="#eye"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="nft-card__lock">
+                        <svg width="12" height="16">
+                            <use xlink:href="#lock"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="top-list__item nft-card">
+            <img src="@img/jpg/NFT/large/nft_10_l.jpg" alt="Zombie" class="nft-card__img" width="500" height="500">
+            <div class="nft-card__desc">
+                <span class="nft-card__heading">Zombie <strong class="nft-card__hash">#54337</strong></span>
+                <div class="nft-card__actions">
+                    <a href="#" class="nft-card__watch">
+                        <svg width="15" height="10">
+                            <use xlink:href="#eye"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="nft-card__lock">
+                        <svg width="12" height="16">
+                            <use xlink:href="#lock"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="top-list__item nft-card">
+            <img src="@img/jpg/NFT/large/nft_7_l.jpg" alt="Pink Devil" class="nft-card__img" width="500" height="500">
+            <div class="nft-card__desc">
+                <span class="nft-card__heading">Pink Devil <strong class="nft-card__hash">#54392</strong></span>
+                <div class="nft-card__actions">
+                    <a href="#" class="nft-card__watch">
+                        <svg width="15" height="10">
+                            <use xlink:href="#eye"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="nft-card__lock">
+                        <svg width="12" height="16">
+                            <use xlink:href="#lock"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <a href="#" class="top-list__cta btn btn--square">View all</a>
+</section>
+<section class="faq container container--sml">
+    <h2 class="faq__title h1-like">FAQ</h2>
+    <ul class="faq__list spoller" data-spollers data-one-spoller>
+        <li class="faq__item spoller__item">
+            <button class="spoller__btn" data-spoller>
+                <span class="spoller__title text text--wide text--big">Donec posuere massa nec arcu scelerisque, blandit mattis justo blandit</span>
+                <svg width="26" height="14" class="spoller__arrow">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+            </button>
+            <div class="spoller__text text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Perspiciatis vitae reprehenderit officiis asperiores repellendus 
+                iusto mollitia ad repellat vel ducimus illum, sunt doloribus 
+                enim earum deserunt amet temporibus dignissimos ut, harum 
+                tempora reiciendis facere. Vitae suscipit accusantium incidunt 
+                exercitationem inventore.
+            </div>
+        </li>
+        <li class="faq__item spoller__item">
+            <button class="spoller__btn" data-spoller>
+                <span class="spoller__title text text--wide text--big">Quisque at justo semper, faucibus eros sit amet, scelerisque lorem.</span>
+                <svg width="26" height="14" class="spoller__arrow">
+                    <use xlink:href="#arrow"></use>
+                </svg>    
+            </button>
+            <div class="spoller__text text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quae accusantium officia explicabo excepturi est?
+            </div>
+        </li>
+        <li class="faq__item spoller__item">
+            <button class="spoller__btn" data-spoller>
+                <span class="spoller__title text text--wide text--big">Nulla eget justo at eros varius consequat.</span>
+                <svg width="26" height="14" class="spoller__arrow">
+                    <use xlink:href="#arrow"></use>
+                </svg>    
+            </button>
+            <div class="spoller__text text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic?
+            </div>
+        </li>
+        <li class="faq__item spoller__item">
+            <button class="spoller__btn" data-spoller>
+                <span class="spoller__title text text--wide text--big">Vivamus non nibh quis massa laoreet semper et eu quam</span>
+                <svg width="26" height="14" class="spoller__arrow">
+                    <use xlink:href="#arrow"></use>
+                </svg>    
+            </button>
+            <div class="spoller__text text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Recusandae tempora quasi laborum! Amet modi quisquam magni id eius eos nobis.
+            </div>
+        </li>
+        <li class="faq__item spoller__item">
+            <button class="spoller__btn" data-spoller>
+                <span class="spoller__title text text--wide text--big">Morbi quis nisi tempus, mollis turpis ut, mollis massa.</span>
+                <svg width="26" height="14" class="spoller__arrow">
+                    <use xlink:href="#arrow"></use>
+                </svg>    
+            </button>
+            <div class="spoller__text text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic?
+            </div>
+        </li>
+    </ul>
+</section>
+</main>
+@@include('./layout/footer.html')
+@@include('./layout/svgSprite.html')
+</body>
+</html>

@@ -1,0 +1,25 @@
+@use '../alias/medias' as *;
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    &__title {
+        text-align: center;
+    }
+}
+
+@include bp-up(medium) {
+    .faq {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    
+        &__title {
+            text-align: start;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@use '../alias/medias' as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: var(--header-h);
+}
+
+@include bp-up(medium) {
+    .main {
+        gap: 6rem;
+    }
+}

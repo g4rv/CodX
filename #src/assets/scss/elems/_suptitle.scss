@@ -1,0 +1,9 @@
+.suptitle {
+    color: var(--clr-green-10);
+    font-size: var(--fz-14);
+    order: -1;
+
+    &--red {
+        color: var(--clr-red-10);
+    }
+}

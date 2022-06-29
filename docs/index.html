@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+
+    <!-- Media link -->
+    <!-- Localization en_US, ru_RU... -->
+    <meta property='og:locale' content=''>
+    <meta property='og:type' content='article'>
+    <!-- Title -->
+    <meta property='og:title' content=''>
+    <!-- Description -->
+    <meta property='og:description' content=''>
+    <!-- Image -->
+    <meta property='og:image' content=''>
+    <!-- URL -->
+    <meta property='og:url' content=''>
+    <!-- Name -->
+    <meta property='og:site_name' content=''>
+
+    <!-- Twitter media link -->
+    <meta name='twitter:card' content='summary'>
+    <!-- Author -->
+    <meta name='twitter:site' content=''>
+    <!-- Title -->
+    <meta name='twitter:title' content=''>
+    <!-- Description -->
+    <meta name='twitter:description' content=''>
+    <!-- Image -->
+    <meta name='twitter:image' content=''>
+
+    <!-- Favicon -->
+    <!--If SVG type='image/svg+xml'-->
+    <link rel='icon' type='image' href=''>
+
+    <!-- Title -->
+    <title>CodX</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.min.css?_v=20220629171300">
+
+
+    <!-- Scripts -->
+    <script type="module" src="assets/js/script.min.js?_v=20220629171300"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container container--no-pad">
+            <a href="#" class="logo">
+                <svg width="94" height="31">
+                    <path id="cod" d="M14.82 30.84c-1.9 0-3.8-.33-5.62-1.14a14.1 14.1 0 0 1-4.53-3.24A15.52 15.52 0 0 1 .66 15.59c0-2.04.36-4.15 1.02-6.01A13.91 13.91 0 0 1 14.74.33c1.9 0 3.87.32 5.7 1.13 1.6.73 3.13 1.7 4.37 3.08L20.36 9.5a6.4 6.4 0 0 0-2.33-1.78 6.49 6.49 0 0 0-3.29-.65 6.18 6.18 0 0 0-5.18 2.35 9.56 9.56 0 0 0-1.53 2.68 11.7 11.7 0 0 0-.51 3.57c0 1.22.14 2.44.5 3.57A10 10 0 0 0 9.57 22a8.08 8.08 0 0 0 2.26 1.79c.95.4 1.97.57 2.92.57a6.88 6.88 0 0 0 5.7-2.52l4.52 4.95a15.23 15.23 0 0 1-4.38 3.08c-1.9.65-3.8.98-5.76.98Zm20.14 0c-1.83 0-3.65-.4-5.26-1.38a10.2 10.2 0 0 1-3.65-3.82 11.14 11.14 0 0 1-1.3-5.51c0-1.87.43-3.82 1.3-5.44a10.13 10.13 0 0 1 14.16-3.81c1.54.89 2.78 2.19 3.65 3.8a10.53 10.53 0 0 1 1.32 5.36c0 1.95-.44 3.82-1.32 5.52a9.66 9.66 0 0 1-3.65 3.82 10.33 10.33 0 0 1-5.25 1.46Zm0-6.5a3.9 3.9 0 0 0 1.9-.48c.5-.33 1.02-.9 1.3-1.46.3-.65.45-1.46.45-2.2 0-.72-.15-1.54-.51-2.18a3.19 3.19 0 0 0-3.14-1.95c-.66 0-1.32.16-1.9.57-.51.32-.95.89-1.24 1.54-.3.65-.44 1.38-.44 2.19 0 .73.15 1.46.44 2.19.3.65.73 1.14 1.24 1.46.51.16 1.17.33 1.9.33Zm19.56 6.42a8.55 8.55 0 0 1-7.88-5.12c-.8-1.7-1.17-3.57-1.1-5.43 0-1.87.37-3.82 1.1-5.52a9.33 9.33 0 0 1 3.13-3.73 8.35 8.35 0 0 1 4.75-1.38c1.1 0 2.19.24 3.2.73a6 6 0 0 1 2.49 1.94c.66.82 1.1 1.79 1.17 2.84V25a6.73 6.73 0 0 1-1.17 2.93c-.73.89-1.6 1.62-2.55 2.19-1.03.4-2.12.65-3.14.65Zm1.1-6.41a3.9 3.9 0 0 0 1.89-.5c.51-.32.95-.88 1.24-1.45a5.18 5.18 0 0 0 .07-4.3 3.83 3.83 0 0 0-1.24-1.46 3.27 3.27 0 0 0-1.9-.57c-.65 0-1.3.16-1.9.57-.5.4-.94.89-1.3 1.46-.3.65-.44 1.38-.44 2.1 0 .74.14 1.47.43 2.2.3.57.73 1.13 1.32 1.46a4.4 4.4 0 0 0 1.82.49Zm9.77 6h-6.42v-5.44l.87-5.03-1.02-4.95V0h6.5l.07 30.35Z" />
+                    <path id="x" d="m84.95 30.19-7.22-13.15h-.66L67 .64h7.95l7.08 12.43h.66l10.14 17.12h-7.88Zm-18.4 0 9.64-15.75 5.26 2.76-7.3 12.99h-7.6Zm16.28-13.8-5.25-2.84L84.66.65h7.66l-9.49 15.74Z" fill="url(#a)" />
+                    <defs>
+                        <linearGradient id="a" x1="70.64" y1="2.64" x2="90.37" y2="25.81" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#EAD71B" />
+                            <stop offset=".57" stop-color="#FF7F96" />
+                            <stop offset="1" stop-color="#82CBAC" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </a>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav__block" burger-menu>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">NFTs</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav__socials socials socials__list">
+                    <li class="socials__social">
+                        <a href="#" class="socials__link">
+                            <span class="hide">Twitter</span>
+                            <svg width="18" height="18">
+                                <use xlink:href="#twit"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__social">
+                        <a href="#" class="socials__link">
+                            <span class="hide">Instagram</span>
+                            <svg width="18" height="18">
+                                <use xlink:href="#inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__social">
+                        <a href="#" class="socials__link">
+                            <span class="hide">Facebook</span>
+                            <svg width="18" height="18">
+                                <use xlink:href="#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="nav__cta btn">View on OpenSea</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero container">
+            <div class="hero__content">
+                <h1 class="hero__title h1-like">Change your Digital Experience</h1>
+                <p class="hero__suptitle suptitle">EXTRAORDINARY NFTs</p>
+                <p class="hero__text text">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+            </div>
+            <ul class="hero__cards team-cards" cards-switcher>
+                <li class="team-cards__card" cards-card>
+                    <div class="team-cards__teammate">
+                        <picture>
+                            <source srcset="assets/img/jpg/avatars/Lee_smal.webp" type="image/webp">
+                            <img src="assets/img/jpg/avatars/Lee_smal.jpg" alt="Lee Stone avatar" class="team-cards__avatar" width="150" height="150">
+                        </picture>
+                        <div class="team-cards__info">
+                            <span class="team-cards__name">Lee Stone</span>
+                            <span class="team-cards__post">Founder</span>
+                        </div>
+                    </div>
+                    <div class="team-cards__bg">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_12.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_12.jpg" alt="Lee`s nft" width="410" height="410">
+                        </picture>
+                    </div>
+                </li>
+                <li class="team-cards__card team-cards__card--active" cards-card>
+                    <div class="team-cards__teammate">
+                        <picture>
+                            <source srcset="assets/img/jpg/avatars/Mia_smal.webp" type="image/webp">
+                            <img src="assets/img/jpg/avatars/Mia_smal.jpg" alt="Mia Potter avatar" class="team-cards__avatar" width="150" height="150">
+                        </picture>
+                        <div class="team-cards__info">
+                            <span class="team-cards__name">Mia Potter</span>
+                            <span class="team-cards__post">Digital creator</span>
+                        </div>
+                    </div>
+                    <div class="team-cards__bg">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_13.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_13.jpg" alt="Mia`s nft" width="410" height="410">
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="carousel container container--no-pad">
+            <h2 class="hide">NFT collection</h2>
+            <div class="carousel__wrap" carousel>
+                <ul class="carousel__list">
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_2.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_2.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_3.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_3.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_4.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_4.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_10.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_10.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_11.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_11.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_5.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_5.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_12.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_12.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_6.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_6.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                    <li class="carousel__item">
+                        <picture>
+                            <source srcset="assets/img/jpg/NFT/nft_7.webp" type="image/webp">
+                            <img src="assets/img/jpg/NFT/nft_7.jpg" alt="" class="carousel__img" width="200" height="200">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="about-us container">
+            <div class="about-us__header">
+                <h2 class="about-us__title h1-like">Hey there, we are</h2>
+                <p class="about-us__subtitle subtitle">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+            </div>
+            <div class="about-us__members">
+                <div class="about-us__member-btns">
+                    <button class="about-us__member-btn about-us__member-btn--active btn btn--unfilled">Jack</button>
+                    <button class="about-us__member-btn btn btn--unfilled">Suni</button>
+                    <button class="about-us__member-btn btn btn--unfilled">Colin</button>
+                </div>
+                <ul class="about-us__member-list">
+                    <li class="about-us__member about-us__member--active" data-member-name="Jack">
+                        <picture>
+                            <source srcset="assets/img/png/mate1.webp" type="image/webp">
+                            <img src="assets/img/png/mate1.png" alt="Jack img" class="about-us__member-img" width="387" height="478">
+                        </picture>
+                        <div class="about-us__member-info">
+                            <p class="about-us__member-post suptitle suptitle--red">Digital Artist</p>
+                            <h3 class="about-us__member-character h3-like">Pellentesque blandit in quam rhoncus</h3>
+                            <p class="about-us__member-text text">
+                                Suspendisse ante mauris, volutpat congue sem ac,
+                                ultrices tempor lorem. Nullam eget vehicula tellus,
+                                ac consectetur urna. Mauris tincidunt, libero id
+                                ultrices tincidunt, mi leo pharetra dolor, sed
+                                luctus dui ipsum et augue. Integer non quam feugiat,
+                                porttitor libero a, tempor neque. Nulla ac orci mauris.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="about-us__member" data-member-name="Suni">
+                        <picture>
+                            <source srcset="assets/img/png/mate2.webp" type="image/webp">
+                            <img src="assets/img/png/mate2.png" alt="Suni img" class="about-us__member-img" width="387" height="478">
+                        </picture>
+                        <div class="about-us__member-info">
+                            <p class="about-us__member-post suptitle suptitle--red">Web Dev.</p>
+                            <h3 class="about-us__member-character h3-like">Pellentesque blandit in quam rhoncus</h3>
+                            <p class="about-us__member-text text">
+                                Suspendisse ante mauris, volutpat congue sem ac,
+                                ultrices tempor lorem. Nullam eget vehicula tellus,
+                                ac consectetur urna. Mauris tincidunt, libero id
+                                ultrices tincidunt, mi leo pharetra dolor, sed
+                                luctus dui ipsum et augue. Integer non quam feugiat,
+                                porttitor libero a, tempor neque. Nulla ac orci mauris.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="about-us__member" data-member-name="Colin">
+                        <picture>
+                            <source srcset="assets/img/png/mate3.webp" type="image/webp">
+                            <img src="assets/img/png/mate3.png" alt="Colin img" class="about-us__member-img" width="387" height="478">
+                        </picture>
+                        <div class="about-us__member-info">
+                            <p class="about-us__member-post suptitle suptitle--red">Designer</p>
+                            <h3 class="about-us__member-character h3-like">Pellentesque blandit in quam rhoncus</h3>
+                            <p class="about-us__member-text text">
+                                Suspendisse ante mauris, volutpat congue sem ac,
+                                ultrices tempor lorem. Nullam eget vehicula tellus,
+                                ac consectetur urna. Mauris tincidunt, libero id
+                                ultrices tincidunt, mi leo pharetra dolor, sed
+                                luctus dui ipsum et augue. Integer non quam feugiat,
+                                porttitor libero a, tempor neque. Nulla ac orci mauris.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="our-work container">
+            <picture>
+                <source srcset="assets/img/jpg/our-work.webp" type="image/webp">
+                <img src="assets/img/jpg/our-work.jpg" alt="Our work" class="our-work__img" width="550" height="550">
+            </picture>
+            <div class="our-work__content">
+                <h2 class="our-work__title h3-like">our work</h2>
+                <p class="our-work__entry h2-like">&#8220;Um… what’s going on here?&#8221;</p>
+                <p class="our-work__text text">Nulla facilisi. Praesent molestie diam eu enim aliquet pellentesque. Vestibulum consectetur vestibulum tristique. Sed purus neque, maximus fermentum bibendum et, porta in sapien.</p>
+                <a href="#" class="our-work__btn btn btn--square btn--bold">About Codx</a>
+            </div>
+        </section>
+        <section class="services container">
+            <h2 class="hide">Our services</h2>
+            <ol class="services__list">
+                <li class="services__service">
+                    <h3 class="services__heading h3-like h3-like--bold">Motion Graphic</h3>
+                    <p class="services__desc text">
+                        Suspendisse sem neque, auctor a elementum ut,
+                        varius vel leo. Donec diam arcu, porta et magna at
+                    </p>
+                </li>
+                <li class="services__service">
+                    <h3 class="services__heading h3-like h3-like--bold">Digital Illustration</h3>
+                    <p class="services__desc text">
+                        Suspendisse sem neque, auctor a elementum ut,
+                        varius vel leo. Donec diam arcu, porta et magna at
+                    </p>
+                </li>
+                <li class="services__service">
+                    <h3 class="services__heading h3-like h3-like--bold">Photography</h3>
+                    <p class="services__desc text">
+                        Suspendisse sem neque, auctor a elementum ut,
+                        varius vel leo. Donec diam arcu, porta et magna at
+                    </p>
+                </li>
+            </ol>
+            <picture>
+                <source srcset="assets/img/jpg/NFT/nft_1.webp" type="image/webp">
+                <img src="assets/img/jpg/NFT/nft_1.jpg" alt="Suit man nft" class="services__img" width="550" height="550">
+            </picture>
+        </section>
+        <section class="join">
+            <div class="join__wrap container">
+                <h2 class="join__title h1-like">Join Us and Discover our most precious NFT</h2>
+                <br class="join__text text">
+                Suspendisse sem neque, auctor a elementum ut, varius vel leo. </br>
+                Donec diam arcu, porta et magna at
+                </p>
+                <a href="#" class="join__cta btn btn--square">View on OpenSea</a>
+            </div>
+        </section>
+        <section class="collections container">
+            <h2 class="collections__title h1-like">Browse by Collections</h2>
+            <ul class="collections__list">
+                <li class="collection collections__item">
+                    <a href="#" class="collection__link">
+                        <picture>
+                            <source srcset="assets/img/jpg/categories/categories_collectibles.webp" type="image/webp">
+                            <img src="assets/img/jpg/categories/categories_collectibles.jpg" alt="Collectibles preview" class="collection__img" width="360" height="360">
+                        </picture>
+                        <span class="collection__heading">Collectibles</span>
+                    </a>
+                </li>
+                <li class="collection collections__item">
+                    <a href="#" class="collection__link">
+                        <picture>
+                            <source srcset="assets/img/jpg/categories/categories_art.webp" type="image/webp">
+                            <img src="assets/img/jpg/categories/categories_art.jpg" alt="Art preview" class="collection__img" width="360" height="360">
+                        </picture>
+                        <span class="collection__heading">Art</span>
+                    </a>
+                </li>
+                <li class="collection collections__item">
+                    <a href="#" class="collection__link">
+                        <picture>
+                            <source srcset="assets/img/jpg/categories/categories_photography.webp" type="image/webp">
+                            <img src="assets/img/jpg/categories/categories_photography.jpg" alt="Photography preview" class="collection__img" width="360" height="360">
+                        </picture>
+                        <span class="collection__heading">Photography</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="collections__cta btn btn--square">View all</a>
+        </section>
+        <section class="top-list container">
+            <h2 class="top-list__title h1-like">Top NFT</h2>
+            <ul class="top-list__list">
+                <li class="top-list__item nft-card">
+                    <picture>
+                        <source srcset="assets/img/jpg/NFT/large/nft_14_l.webp" type="image/webp">
+                        <img src="assets/img/jpg/NFT/large/nft_14_l.jpg" alt="White Bear" class="nft-card__img" width="500" height="500">
+                    </picture>
+                    <div class="nft-card__desc">
+                        <span class="nft-card__heading">White Bear <strong class="nft-card__hash">#54385</strong>
+                        </span>
+                        <div class="nft-card__actions">
+                            <a href="#" class="nft-card__watch">
+                                <svg width="15" height="10">
+                                    <use xlink:href="#eye"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="nft-card__lock">
+                                <svg width="12" height="16">
+                                    <use xlink:href="#lock"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-list__item nft-card">
+                    <picture>
+                        <source srcset="assets/img/jpg/NFT/large/nft_3_l.webp" type="image/webp">
+                        <img src="assets/img/jpg/NFT/large/nft_3_l.jpg" alt="White Bear" class="nft-card__img" width="500" height="500">
+                    </picture>
+                    <div class="nft-card__desc">
+                        <span class="nft-card__heading">Happy Luca <strong class="nft-card__hash">#54395</strong>
+                        </span>
+                        <div class="nft-card__actions">
+                            <a href="#" class="nft-card__watch">
+                                <svg width="15" height="10">
+                                    <use xlink:href="#eye"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="nft-card__lock">
+                                <svg width="12" height="16">
+                                    <use xlink:href="#lock"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-list__item nft-card">
+                    <picture>
+                        <source srcset="assets/img/jpg/NFT/large/nft_5_l.webp" type="image/webp">
+                        <img src="assets/img/jpg/NFT/large/nft_5_l.jpg" alt="Dodo" class="nft-card__img" width="500" height="500">
+                    </picture>
+                    <div class="nft-card__desc">
+                        <span class="nft-card__heading">Dodo <strong class="nft-card__hash">#54376</strong>
+                        </span>
+                        <div class="nft-card__actions">
+                            <a href="#" class="nft-card__watch">
+                                <svg width="15" height="10">
+                                    <use xlink:href="#eye"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="nft-card__lock">
+                                <svg width="12" height="16">
+                                    <use xlink:href="#lock"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-list__item nft-card">
+                    <picture>
+                        <source srcset="assets/img/jpg/NFT/large/nft_4_l.webp" type="image/webp">
+                        <img src="assets/img/jpg/NFT/large/nft_4_l.jpg" alt="Nano Nano" class="nft-card__img" width="500" height="500">
+                    </picture>
+                    <div class="nft-card__desc">
+                        <span class="nft-card__heading">Nano Nano <strong class="nft-card__hash">#54348</strong>
+                        </span>
+                        <div class="nft-card__actions">
+                            <a href="#" class="nft-card__watch">
+                                <svg width="15" height="10">
+                                    <use xlink:href="#eye"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="nft-card__lock">
+                                <svg width="12" height="16">
+                                    <use xlink:href="#lock"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-list__item nft-card">
+                    <picture>
+                        <source srcset="assets/img/jpg/NFT/large/nft_10_l.webp" type="image/webp">
+                        <img src="assets/img/jpg/NFT/large/nft_10_l.jpg" alt="Zombie" class="nft-card__img" width="500" height="500">
+                    </picture>
+                    <div class="nft-card__desc">
+                        <span class="nft-card__heading">Zombie <strong class="nft-card__hash">#54337</strong>
+                        </span>
+                        <div class="nft-card__actions">
+                            <a href="#" class="nft-card__watch">
+                                <svg width="15" height="10">
+                                    <use xlink:href="#eye"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="nft-card__lock">
+                                <svg width="12" height="16">
+                                    <use xlink:href="#lock"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="top-list__item nft-card">
+                    <picture>
+                        <source srcset="assets/img/jpg/NFT/large/nft_7_l.webp" type="image/webp">
+                        <img src="assets/img/jpg/NFT/large/nft_7_l.jpg" alt="Pink Devil" class="nft-card__img" width="500" height="500">
+                    </picture>
+                    <div class="nft-card__desc">
+                        <span class="nft-card__heading">Pink Devil <strong class="nft-card__hash">#54392</strong>
+                        </span>
+                        <div class="nft-card__actions">
+                            <a href="#" class="nft-card__watch">
+                                <svg width="15" height="10">
+                                    <use xlink:href="#eye"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="nft-card__lock">
+                                <svg width="12" height="16">
+                                    <use xlink:href="#lock"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="top-list__cta btn btn--square">View all</a>
+        </section>
+        <section class="faq container container--sml">
+            <h2 class="faq__title h1-like">FAQ</h2>
+            <ul class="faq__list spoller" data-spollers data-one-spoller>
+                <li class="faq__item spoller__item">
+                    <button class="spoller__btn" data-spoller>
+                        <span class="spoller__title text text--wide text--big">Donec posuere massa nec arcu scelerisque, blandit mattis justo blandit</span>
+                        <svg width="26" height="14" class="spoller__arrow">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="spoller__text text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Perspiciatis vitae reprehenderit officiis asperiores repellendus
+                        iusto mollitia ad repellat vel ducimus illum, sunt doloribus
+                        enim earum deserunt amet temporibus dignissimos ut, harum
+                        tempora reiciendis facere. Vitae suscipit accusantium incidunt
+                        exercitationem inventore.
+                    </div>
+                </li>
+                <li class="faq__item spoller__item">
+                    <button class="spoller__btn" data-spoller>
+                        <span class="spoller__title text text--wide text--big">Quisque at justo semper, faucibus eros sit amet, scelerisque lorem.</span>
+                        <svg width="26" height="14" class="spoller__arrow">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="spoller__text text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quae accusantium officia explicabo excepturi est?
+                    </div>
+                </li>
+                <li class="faq__item spoller__item">
+                    <button class="spoller__btn" data-spoller>
+                        <span class="spoller__title text text--wide text--big">Nulla eget justo at eros varius consequat.</span>
+                        <svg width="26" height="14" class="spoller__arrow">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="spoller__text text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic?
+                    </div>
+                </li>
+                <li class="faq__item spoller__item">
+                    <button class="spoller__btn" data-spoller>
+                        <span class="spoller__title text text--wide text--big">Vivamus non nibh quis massa laoreet semper et eu quam</span>
+                        <svg width="26" height="14" class="spoller__arrow">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="spoller__text text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Recusandae tempora quasi laborum! Amet modi quisquam magni id eius eos nobis.
+                    </div>
+                </li>
+                <li class="faq__item spoller__item">
+                    <button class="spoller__btn" data-spoller>
+                        <span class="spoller__title text text--wide text--big">Morbi quis nisi tempus, mollis turpis ut, mollis massa.</span>
+                        <svg width="26" height="14" class="spoller__arrow">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </button>
+                    <div class="spoller__text text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, hic?
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer container container--sml">
+        <div class="footer__content">
+            <div class="footer__block">
+                <a href="#" class="logo">
+                    <svg width="94" height="31">
+                        <path id="cod" d="M14.82 30.84c-1.9 0-3.8-.33-5.62-1.14a14.1 14.1 0 0 1-4.53-3.24A15.52 15.52 0 0 1 .66 15.59c0-2.04.36-4.15 1.02-6.01A13.91 13.91 0 0 1 14.74.33c1.9 0 3.87.32 5.7 1.13 1.6.73 3.13 1.7 4.37 3.08L20.36 9.5a6.4 6.4 0 0 0-2.33-1.78 6.49 6.49 0 0 0-3.29-.65 6.18 6.18 0 0 0-5.18 2.35 9.56 9.56 0 0 0-1.53 2.68 11.7 11.7 0 0 0-.51 3.57c0 1.22.14 2.44.5 3.57A10 10 0 0 0 9.57 22a8.08 8.08 0 0 0 2.26 1.79c.95.4 1.97.57 2.92.57a6.88 6.88 0 0 0 5.7-2.52l4.52 4.95a15.23 15.23 0 0 1-4.38 3.08c-1.9.65-3.8.98-5.76.98Zm20.14 0c-1.83 0-3.65-.4-5.26-1.38a10.2 10.2 0 0 1-3.65-3.82 11.14 11.14 0 0 1-1.3-5.51c0-1.87.43-3.82 1.3-5.44a10.13 10.13 0 0 1 14.16-3.81c1.54.89 2.78 2.19 3.65 3.8a10.53 10.53 0 0 1 1.32 5.36c0 1.95-.44 3.82-1.32 5.52a9.66 9.66 0 0 1-3.65 3.82 10.33 10.33 0 0 1-5.25 1.46Zm0-6.5a3.9 3.9 0 0 0 1.9-.48c.5-.33 1.02-.9 1.3-1.46.3-.65.45-1.46.45-2.2 0-.72-.15-1.54-.51-2.18a3.19 3.19 0 0 0-3.14-1.95c-.66 0-1.32.16-1.9.57-.51.32-.95.89-1.24 1.54-.3.65-.44 1.38-.44 2.19 0 .73.15 1.46.44 2.19.3.65.73 1.14 1.24 1.46.51.16 1.17.33 1.9.33Zm19.56 6.42a8.55 8.55 0 0 1-7.88-5.12c-.8-1.7-1.17-3.57-1.1-5.43 0-1.87.37-3.82 1.1-5.52a9.33 9.33 0 0 1 3.13-3.73 8.35 8.35 0 0 1 4.75-1.38c1.1 0 2.19.24 3.2.73a6 6 0 0 1 2.49 1.94c.66.82 1.1 1.79 1.17 2.84V25a6.73 6.73 0 0 1-1.17 2.93c-.73.89-1.6 1.62-2.55 2.19-1.03.4-2.12.65-3.14.65Zm1.1-6.41a3.9 3.9 0 0 0 1.89-.5c.51-.32.95-.88 1.24-1.45a5.18 5.18 0 0 0 .07-4.3 3.83 3.83 0 0 0-1.24-1.46 3.27 3.27 0 0 0-1.9-.57c-.65 0-1.3.16-1.9.57-.5.4-.94.89-1.3 1.46-.3.65-.44 1.38-.44 2.1 0 .74.14 1.47.43 2.2.3.57.73 1.13 1.32 1.46a4.4 4.4 0 0 0 1.82.49Zm9.77 6h-6.42v-5.44l.87-5.03-1.02-4.95V0h6.5l.07 30.35Z" />
+                        <path id="x" d="m84.95 30.19-7.22-13.15h-.66L67 .64h7.95l7.08 12.43h.66l10.14 17.12h-7.88Zm-18.4 0 9.64-15.75 5.26 2.76-7.3 12.99h-7.6Zm16.28-13.8-5.25-2.84L84.66.65h7.66l-9.49 15.74Z" fill="url(#a)" />
+                        <defs>
+                            <linearGradient id="a" x1="70.64" y1="2.64" x2="90.37" y2="25.81" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EAD71B" />
+                                <stop offset=".57" stop-color="#FF7F96" />
+                                <stop offset="1" stop-color="#82CBAC" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+                <div class="socials">
+                    <h2 class="socials__heading">Join the community</h2>
+                    <ul class="socials__list">
+                        <li class="socials__social">
+                            <a href="#" class="socials__link">
+                                <span class="hide">Twitter</span>
+                                <svg width="18" height="18">
+                                    <use xlink:href="#twit"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__social">
+                            <a href="#" class="socials__link">
+                                <span class="hide">Instagram</span>
+                                <svg width="18" height="18">
+                                    <use xlink:href="#inst"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__social">
+                            <a href="#" class="socials__link">
+                                <span class="hide">Facebook</span>
+                                <svg width="18" height="18">
+                                    <use xlink:href="#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="nav nav--footer">
+                <div class="nav__list">
+                    <h2 class="nav__menu-heading text--big">Site</h2>
+                    <ul class="nav__menu">
+                        <li class="nav__item">
+                            <a href="" class="nav__link text--sml">About us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link text--sml">NFTs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link text--sml">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__list">
+                    <h2 class="nav__menu-heading text--big">Utility</h2>
+                    <ul class="nav__menu">
+                        <li class="nav__item">
+                            <a href="" class="nav__link text--sml">Style guide</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link text--sml">Lincensing</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link text--sml">404</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="subscribe">
+                <h2 class="subscribe__title h3-like">Stay in the loop</h2>
+                <p class="subscribe__text">
+                    Suspendisse sem neque, auctor a elementum ut,
+                    varius vel leo. Donec diam arcu, porta et magna at
+                </p>
+                <form action="" class="form subscribe__form">
+                    <div class="form__block">
+                        <label class="form__label hide" for="emailInput">Type your email here</label>
+                        <input id="emailInput" type="email" class="form__input" placeholder="Your email address">
+                        <button class="form__btn btn">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer__copyright copyright">
+            <p class="copyright__copyright">
+                © 2022 All rights reserved.
+            </p>
+            <p class="copyright__made-by">
+                Created By <a href="#" class="copyright__author">g4rv</a>
+            </p>
+        </div>
+    </footer>
+    <svg display="none">
+        <symbol viewBox="0 0 8 17" id="fb">
+            <path d="M7.84 5.9H5.4V4.31c0-.6.4-.74.67-.74H7.8V.94H5.44C2.82.94 2.22 2.9 2.22 4.15V5.9H.71v2.71h1.51v7.66h3.19V8.61h2.15l.28-2.7z" />
+        </symbol>
+        <symbol viewBox="0 0 19 19" id="inst" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="M9.08 4.842c-2.541 0-4.646 2.069-4.646 4.646a4.631 4.631 0 004.645 4.645 4.655 4.655 0 004.646-4.645c0-2.54-2.105-4.646-4.646-4.646zm0 7.621a2.99 2.99 0 01-2.976-2.975 2.99 2.99 0 012.975-2.976 2.99 2.99 0 012.976 2.976 2.99 2.99 0 01-2.976 2.975zm4.826-6.677a1.052 1.052 0 100-2.105 1.052 1.052 0 000 2.105z" />
+                <path d="M16.628 2.012c-.944-.98-2.287-1.488-3.81-1.488H5.34C2.184.524.08 2.629.08 5.786v7.44c0 1.56.508 2.903 1.525 3.882.98.944 2.286 1.416 3.774 1.416h7.403c1.56 0 2.867-.508 3.81-1.416.98-.943 1.488-2.286 1.488-3.846V5.786c0-1.524-.508-2.83-1.451-3.774zm-.218 11.25c0 1.125-.327 2.032-.98 2.649s-1.56.944-2.649.944H5.378c-1.089 0-1.996-.327-2.65-.944-.653-.653-.98-1.56-.98-2.686v-7.44c0-1.088.327-1.995.98-2.648.617-.617 1.561-.944 2.65-.944h7.476c1.088 0 1.996.327 2.649.98.617.653.98 1.56.98 2.613v7.476h-.073z" />
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 17 14" id="twit">
+            <path d="M16.17 1.94a6.4 6.4 0 01-1.84.5 3.22 3.22 0 001.4-1.77c-.61.36-1.3.63-2.03.78a3.2 3.2 0 00-5.47 2.92 9.1 9.1 0 01-6.61-3.35 3.2 3.2 0 001 4.28 3.2 3.2 0 01-1.46-.4v.04c0 1.56 1.1 2.85 2.57 3.15a3.22 3.22 0 01-1.45.05 3.22 3.22 0 003 2.23A6.44 6.44 0 01.53 11.7a9.08 9.08 0 004.92 1.44c5.9 0 9.13-4.89 9.13-9.13l-.01-.41a6.51 6.51 0 001.6-1.66z" />
+        </symbol>
+        <symbol viewBox="0 0 16 11" id="eye">
+            <path d="M8.168.568c-3.454 0-6.404 2.149-7.6 5.182 1.196 3.033 4.146 5.181 7.6 5.181s6.405-2.148 7.6-5.181C14.573 2.717 11.623.568 8.168.568zm0 8.636a3.456 3.456 0 010-6.909 3.455 3.455 0 010 6.909zm0-5.527A2.07 2.07 0 006.096 5.75c0 1.147.926 2.072 2.072 2.072s2.073-.925 2.073-2.072a2.07 2.07 0 00-2.073-2.073z" fill-opacity=".7" />
+        </symbol>
+        <symbol viewBox="0 0 12 16" id="lock">
+            <path d="M10.211 5.728h-.729V4.269A3.648 3.648 0 005.836.623 3.648 3.648 0 002.19 4.269v1.459h-.73c-.802 0-1.458.656-1.458 1.458v7.293c0 .802.656 1.458 1.458 1.458h8.751c.803 0 1.459-.656 1.459-1.458V7.186c0-.802-.656-1.458-1.459-1.458zM5.836 12.29a1.463 1.463 0 01-1.459-1.458c0-.803.657-1.459 1.459-1.459s1.458.656 1.458 1.459c0 .802-.656 1.458-1.458 1.458zM3.648 5.728V4.269c0-1.21.977-2.187 2.188-2.187 1.21 0 2.188.977 2.188 2.187v1.459H3.648z" />
+        </symbol>
+        <symbol viewBox="0 0 28 17" id="arrow">
+            <path d="M1.06 1.94l14 14m-2.12 0l14-14" stroke-width="3" />
+        </symbol>
+    </svg>
+</body>
+
+</html>

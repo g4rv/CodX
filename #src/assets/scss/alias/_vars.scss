@@ -1,0 +1,63 @@
+@use 'colors' as *;
+@use 'font-style' as *;
+@use 'medias' as *;
+@use 'z-index' as *;
+
+:root {
+    //colors
+    @each $hue, $shades in $colors {
+        @each $shade, $color in $shades {
+            --clr-#{$hue}-#{$shade}: hsl(#{$color});
+            --clra-#{$hue}-#{$shade}: #{$color};
+        }
+    }
+
+    //Font
+    //font-family
+    --ff: 'Outfit';
+    
+    //font-sizes
+    @each $screen-size, $font-sizes in $font-size {
+        @if $screen-size == small { 
+            //mobile
+            @each $size, $value in $font-sizes{
+                --fz-#{$size}: #{$value};
+            }
+        } @else if $screen-size == mid {
+            @include bp-up(small) {
+                //tablet
+                @each $size, $value in $font-sizes{
+                    --fz-#{$size}: #{$value};
+                }
+            }
+        } @else if $screen-size == big {
+            @include bp-up(large) {
+                //desktop
+                @each $size, $value in $font-sizes{
+                    --fz-#{$size}: #{$value};
+                }
+            }
+        }
+    }
+
+    //font-weight
+    @each $weight, $value in $font-weight {
+        --fw-#{$weight}: #{$value};
+    }
+
+    //line-height
+    @each $height, $value in $line-height {
+        --lh-#{$height}: #{$value};
+    }
+
+    //z-index
+    @each $index, $value in $z-index {
+        --i-#{$index}: #{$value};
+    }
+
+    // 100vh include header height
+    --height-100vh: calc(100vh - var(--header-h));
+
+    // Border radius
+    --br-def: 30px;
+}

@@ -1,0 +1,15 @@
+.container {
+    --cont-pad: 2rem;
+    --cont-width: 1200px;
+
+    width: min(calc(100% - var(--cont-pad)), var(--cont-width));
+    margin-inline: auto;
+
+    &--no-pad {
+        --cont-pad: 0px;
+    }
+
+    &--sml {
+        --cont-width: 1100px;
+    }
+}

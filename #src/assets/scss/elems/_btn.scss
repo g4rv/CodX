@@ -1,0 +1,23 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 1em;
+    color: var(--clr-ntrl-1);
+    font-size: var(--fz-14);
+    background-color: var(--clr-ntrl-20);
+    border-radius: 30px;
+
+    &--unfilled {
+        color: var(--clr-ntrl-20);
+        background-color: transparent;
+        box-shadow: inset 0px 0px 0px 1px currentColor;
+    }
+
+    &--square {
+        border-radius: 0;
+    }
+
+    &--bold {
+        font-weight: var(--fw-bold);
+    }
+}

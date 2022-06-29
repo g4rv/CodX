@@ -1,0 +1,31 @@
+@use '../alias/medias' as *;
+
+.form {
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .5rem;
+    }
+    &__input {
+        width: 100%;
+        flex: 1 1 200px;
+        padding: .75rem 2rem;
+        background-color: var(--clr-ntrl-10);
+        border-radius: 30px;
+        &::placeholder {
+            color: hsla(var(--clra-ntrl-20) / .35);
+        }
+    }
+    &__btn {
+        width: 100%;
+    }
+}
+
+@include bp-up(medium) {
+    .form {
+        &__block {
+            grid-template-columns: 1fr max-content;
+
+        }
+    }
+}

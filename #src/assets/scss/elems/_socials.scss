@@ -1,0 +1,19 @@
+.socials {
+
+    &__heading {
+        margin-bottom: 1rem;
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

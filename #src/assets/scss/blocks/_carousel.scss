@@ -1,0 +1,20 @@
+.carousel {
+    overflow: hidden;
+
+    &__wrap {
+        position: relative;
+        height: 150px;
+    }
+
+    &__list {
+        position: absolute;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 150px;
+    }
+
+    &__item {
+        width: 150px;
+        height: 150px;
+    }
+}

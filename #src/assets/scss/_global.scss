@@ -1,0 +1,17 @@
+html {
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr min-content;
+    font-family: var(--ff);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,29 @@
+.join {
+    background-color: var(--clr-green-10);
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding-block: 3rem 9rem;
+        background-image: url('../img/png/team.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 280px;
+    }
+
+    &__title {
+        max-width: 650px;
+    }
+
+    &__text {
+        max-width: 550px;
+    }
+
+    &__cta {
+        max-width: 200px;
+        margin-inline: auto;
+    }
+}

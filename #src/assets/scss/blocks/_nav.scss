@@ -1,0 +1,74 @@
+@use '../alias/medias' as *;
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+.header {
+    .nav {
+        padding: 1rem 1rem;
+    
+        &__block {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            top: 100%;
+            left: -100vw;
+            padding: 4rem 2rem;
+            width: 100vw;
+            height: var(--height-100vh);
+            background-color: var(--clr-ntrl-10);
+            box-shadow: inset 0px 15px 20px -20px hsla(var(--clra-ntrl-20) / .5);
+            transition: .4s ease-in-out;
+            z-index: var(--i-mid);
+    
+    
+            &--active {
+                left: 0;
+                transition: .4s ease-in-out;
+            }
+        }
+    
+        &__socials {
+            margin-top: auto;
+        }
+    }
+}
+
+
+
+@include bp-up(medium) {
+    .header {
+        .nav {
+            &__block {
+                position: static;
+                flex-direction: row;
+                padding: 0;
+                width: 100%;
+                height: unset;
+                box-shadow: none;
+                background-color: transparent;
+            }
+    
+            &__menu {
+                flex-direction: row;
+            }
+    
+            &__socials {
+                margin-top: unset;
+                margin-left: auto;
+            }
+        }
+    }
+}
